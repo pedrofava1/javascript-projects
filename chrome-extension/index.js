@@ -19,22 +19,6 @@ deleteBtn.addEventListener("dblclick", function() {
     renderLeads();
 })
 
-//-------------------------------------------------------------------------
-/*false strings:
--0,
--"",
--null ->(como o desenvolvedor sinaliza que está vazio),
--undefined ->(como o js sinaliza que está vazio), 
--NaN (not a number)*/
-//Boolean() -> testa se algo é true or false
-//-------------------------------------------------------------------------
-
-//JSON.parse() recebe uma string JSON e a transforma em um objeto JavaScript. (ARRAY)
-//JSON.stringify() recebe um objeto JavaScript e o transforma em uma string JSON
-/*myLeads = JSON.parse(myLeads); -> virou objeto
-myLeads.push("inputEl.value");
-myLeads = JSON.stringify(myLeads); -> virou string*/
-
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     inputEl.value = "";
